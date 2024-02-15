@@ -1,0 +1,251 @@
+@font-face {
+  font-family: Brandon-bold;
+  src: url(./assets/Brandon_bld.otf);
+}
+@font-face {
+  font-family: Brandon-x-bold;
+  src: url(./assets/Brandon_blk.otf);
+}
+@font-face {
+  font-family: Brandon-light;
+  src: url(./assets/Brandon_light.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+.flex {
+  display: flex;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-txt {
+  position: absolute;
+  top: 30%;
+  left: 36%;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: Brandon-bold;
+}
+
+.text-lg {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: Brandon-x-bold;
+}
+
+article p {
+  max-width: 1000px;
+  color: #bc8b57;
+  margin: 30px auto;
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  font-family: Brandon-light;
+}
+
+article p span {
+  color: #7e6040;
+  font-family: Brandon-x-bold;
+}
+
+.shop-header {
+  text-align: center;
+  color: #723636;
+  text-decoration: underline;
+  text-decoration-color: #723636;
+  font-family: Brandon-x-bold;
+
+  margin-bottom: 30px;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+.card-left img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+.card-left {
+  width: 50%;
+  background-color: #d8a791;
+}
+.card-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: rgb(112, 71, 57);
+  background-color: rgb(233, 198, 165);
+}
+
+.card__header {
+  font-size: 40px;
+  font-family: Brandon-x-bold;
+  letter-spacing: 1px;
+}
+
+.card__desc {
+  max-width: 500px;
+  font-size: 20px;
+  font-family: Brandon-light;
+  text-align: center;
+}
+
+.footer__text {
+  font-size: 25px;
+  font-family: Brandon-bold;
+}
+
+.card__btn {
+  font-family: Brandon-bold;
+
+  text-transform: uppercase;
+  padding: 10px;
+  width: 190px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #723636;
+  margin-top: 60px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.aristocrat-demo {
+  background-color: rgb(233, 198, 165);
+}
+
+.aristocrat-demo img {
+  display: block;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.package-header {
+  text-decoration: none;
+  margin-top: 90px;
+  letter-spacing: 2px;
+}
+
+.package-desc {
+  font-style: normal;
+  text-align: center;
+}
+.deco-logo {
+  text-align: center;
+}
+.deco-logo > img {
+  width: 300px;
+}
+.legacy__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.legacy-card {
+  background-color: #daa085fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.legacy-card img {
+  display: block;
+}
+
+@media screen and (max-width: 998px) {
+  .hero-txt {
+    top: 20%;
+    left: 27%;
+  }
+  article p {
+    font-size: 24px;
+    max-width: 750px;
+  }
+  .card__header {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-txt {
+    font-size: 20px;
+    left: 20%;
+  }
+  article p {
+    font-size: 20px;
+    max-width: 580px;
+  }
+  .card {
+    flex-direction: column;
+    height: 100%;
+  }
+  .card-left,
+  .card-right {
+    width: 100%;
+  }
+  .card-right {
+    padding: 35px 0;
+  }
+  .card__header {
+    font-size: 30px;
+  }
+  .footer__text {
+    font-size: 18px;
+  }
+  .images-section,
+  .legacy__cards {
+    flex-direction: column;
+  }
+  .aristocrat-demo img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-txt {
+    left: 15%;
+    font-size: 17px;
+  }
+  article p {
+    padding: 0 14px;
+    max-width: 450px;
+  }
+
+  .card__header {
+    font-size: 25px;
+  }
+  .card__desc {
+    padding: 0 10px;
+  }
+}
