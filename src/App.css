@@ -22,55 +22,10 @@ body {
 img {
   max-width: 100%;
 }
+/*========utility clases==========*/
 .flex {
   display: flex;
 }
-
-.hero {
-  position: relative;
-}
-
-.hero-txt {
-  position: absolute;
-  top: 30%;
-  left: 36%;
-  color: white;
-  font-size: 24px;
-  text-align: center;
-  letter-spacing: 1px;
-  font-family: Brandon-bold;
-}
-
-.text-lg {
-  font-size: 30px;
-  font-weight: bolder;
-  font-family: Brandon-x-bold;
-}
-
-article p {
-  max-width: 1000px;
-  color: #bc8b57;
-  margin: 30px auto;
-  font-size: 30px;
-  letter-spacing: 2px;
-  font-family: Brandon-light;
-}
-
-article p span {
-  color: #7e6040;
-  font-family: Brandon-bold;
-}
-
-.shop-header {
-  text-align: center;
-  color: #723636;
-  text-decoration: underline;
-  text-decoration-color: #723636;
-  font-family: Brandon-x-bold;
-
-  margin-bottom: 30px;
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -78,6 +33,57 @@ article p span {
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
+/*========hero section start============= */
+
+.hero {
+  position: relative;
+}
+
+.hero-txt {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: Brandon-bold;
+}
+
+.text-lg {
+  display: inline-block;
+  font-size: 30px;
+  font-family: Brandon-x-bold;
+  margin-bottom: 8px;
+}
+
+/*========hero section end============= */
+article p {
+  max-width: 1000px;
+  color: #754c28;
+  margin: 30px auto;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: Brandon-light;
+}
+
+article p span {
+  color: #754c28;
+  font-family: Brandon-bold;
+}
+
+.shop-header {
+  text-align: center;
+  color: #754c28;
+  text-decoration: underline;
+  text-decoration-color: #754c28;
+  font-family: Brandon-bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  -moz-text-decoration-color: #754c28;
+}
+
+/* ========left side of card(img) start=========== */
 
 .card {
   display: flex;
@@ -93,8 +99,20 @@ article p span {
 
 .card-left {
   width: 50%;
-  background-color: #d8a791;
+  background-color: #dcc5a4;
+  position: relative;
 }
+.vector-video {
+  position: absolute;
+  top: 80px;
+  left: 21%;
+  width: 300px !important;
+  height: 300px !important;
+}
+/* ========left side of card(img) end=========== */
+
+/* ========right side of card(text) start=========== */
+
 .card-right {
   width: 50%;
   display: flex;
@@ -102,13 +120,13 @@ article p span {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  color: rgb(112, 71, 57);
-  background-color: rgb(233, 198, 165);
+  color: #754c28;
+  background-color: #dcc5a4;
 }
 
 .card__header {
   font-size: 40px;
-  font-family: Brandon-x-bold;
+  font-family: Brandon-bold;
   letter-spacing: 1px;
 }
 
@@ -126,7 +144,6 @@ article p span {
 
 .card__btn {
   font-family: Brandon-bold;
-
   text-transform: uppercase;
   padding: 10px;
   width: 190px;
@@ -134,15 +151,20 @@ article p span {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #723636;
+  border: 1px solid #754c28;
   margin-top: 60px;
   font-size: 18px;
   letter-spacing: 1px;
   cursor: pointer;
 }
 
+/* ========right side of card(text) end=========== */
+
+/* ========demo video start=========== */
+
 .aristocrat-demo {
-  background-color: rgb(233, 198, 165);
+  background-color: #dcc5a4;
+  position: relative;
 }
 
 .aristocrat-demo img,
@@ -151,6 +173,12 @@ article p span {
   width: 80vw;
   margin: 0 auto;
 }
+
+.aristocrat-demo .vector-video {
+  left: 38%;
+  top: 120px;
+}
+/* ========demo video end=========== */
 
 .package-header {
   text-decoration: none;
@@ -162,12 +190,18 @@ article p span {
   font-style: normal;
   text-align: center;
 }
+/* ========flower images start=========== */
+
 .deco-logo {
   text-align: center;
 }
 .deco-logo > img {
   width: 300px;
 }
+/* ========flower images end=========== */
+
+/* ========legacy cards start=========== */
+
 .legacy__cards {
   display: flex;
   align-items: center;
@@ -176,7 +210,7 @@ article p span {
 }
 
 .legacy-card {
-  background-color: #daa085fd;
+  background-color: #dcc5a4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,6 +220,8 @@ article p span {
 .legacy-card img {
   display: block;
 }
+
+/* ========legacy cards end=========== */
 
 @media screen and (max-width: 998px) {
   .hero-txt {
@@ -198,6 +234,12 @@ article p span {
   }
   .card__header {
     font-size: 32px;
+  }
+  .aristocrat-demo .vector-video {
+    /* left: 24%; */
+    top: 20px;
+    width: 200px !important;
+    height: 200px !important;
   }
 }
 
@@ -251,5 +293,13 @@ article p span {
   }
   .card__desc {
     padding: 0 10px;
+  }
+  .vector-video {
+    width: 260px !important;
+    height: 260px !important;
+  }
+  .aristocrat-demo .vector-video {
+    width: 130px !important;
+    height: 130px !important;
   }
 }

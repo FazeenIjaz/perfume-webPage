@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import video from "./assets/video-vector.png"
 
 const App = () => {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
@@ -28,7 +29,7 @@ const App = () => {
         <article>
           <p className="">
             Immerse yourself in a world of refreshing and invigorating scents
-            with <span>Aristocrat coral & coastal</span>.Surrender to their
+            with <span>Aristocrat Coral & Coastal</span>.Surrender to their
             irresistible allure as these captivating fragrances become your
             guide to moments of pure serenity.
           </p>
@@ -46,10 +47,14 @@ const App = () => {
           <div className={`card flex-row`}>
             <div className="card-left" onClick={handleImageClick}>
               {isImageVisible && (
+                <>
+                
                 <img
                   src="https://en-ae.ajmal.com/media/wysiwyg/new/section_1.jpg"
                   alt="loading"
                 />
+                <img src={video} alt="" className="vector-video" />
+                </>
               )}
               {isVideoVisible && (
                 <video
@@ -90,10 +95,16 @@ const App = () => {
           />
           <div className="aristocrat-demo" onClick={handleImageClick}>
             {isImageVisible && (
-              <img
+             <>
+             
+             <img
                 src="https://en-ae.ajmal.com/media/wysiwyg/new/section_5.jpg"
                 alt="loading"
               />
+              <img src={video} alt="" className="vector-video" />
+             
+             </>
+
             )}
             {isVideoVisible && (
               <video
@@ -170,13 +181,10 @@ export const Card = ({
   btnTxt,
   footer,
   className,
-  isImageVisible,
-  isVideoVisible,
-  handleImageClick,
 }) => {
   return (
     <div className={`card ${className}`}>
-      <div className="card-left" onClick={handleImageClick}>
+      <div className="card-left">
         {img && <img src={img} alt="loading" />}
         {video && <video src={video} autoPlay controls></video>}
       </div>
