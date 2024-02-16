@@ -1,14 +1,14 @@
 @font-face {
   font-family: Brandon-bold;
-  src: url('https://en-ae.ajmal.com/media/fonts/Brandon_bld.otf');
+  src: url("https://en-ae.ajmal.com/media/fonts/Brandon_bld.otf");
 }
 @font-face {
   font-family: Brandon-x-bold;
-  src: url('https://en-ae.ajmal.com/media/fonts/Brandon_blk.otf');
+  src: url("https://en-ae.ajmal.com/media/fonts/Brandon_blk.otf");
 }
 @font-face {
   font-family: Brandon-light;
-  src: url('https://en-ae.ajmal.com/media/fonts/Brandon_light.otf');
+  src: url("https://en-ae.ajmal.com/media/fonts/Brandon_light.otf");
 }
 
 * {
@@ -17,12 +17,12 @@
   box-sizing: border-box;
 }
 body {
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
 }
 img {
   max-width: 100%;
 }
-/*========utility clases==========*/
+/*========utility classes==========*/
 .flex {
   display: flex;
 }
@@ -88,11 +88,12 @@ article p span {
 .card {
   display: flex;
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
 }
+
 .card-left img,
 .card-left video {
-  height: 500px;
+  /* height: 590px; */
   object-fit: cover;
   width: 100%;
 }
@@ -104,7 +105,7 @@ article p span {
 }
 .vector-video {
   position: absolute;
-  top: 80px;
+  top: 30%;
   left: 21%;
   width: 300px !important;
   height: 300px !important;
@@ -295,8 +296,8 @@ article p span {
     padding: 0 10px;
   }
   .vector-video {
-    width: 260px !important;
-    height: 260px !important;
+    width: 200px !important;
+    height: 200px !important;
   }
   .aristocrat-demo .vector-video {
     width: 130px !important;
