@@ -1,14 +1,14 @@
 @font-face {
   font-family: Brandon-bold;
-  src: url(./assets/Brandon_bld.otf);
+  src: url('https://en-ae.ajmal.com/media/fonts/Brandon_bld.otf');
 }
 @font-face {
   font-family: Brandon-x-bold;
-  src: url(./assets/Brandon_blk.otf);
+  src: url('https://en-ae.ajmal.com/media/fonts/Brandon_blk.otf');
 }
 @font-face {
   font-family: Brandon-light;
-  src: url(./assets/Brandon_light.otf);
+  src: url('https://en-ae.ajmal.com/media/fonts/Brandon_light.otf');
 }
 
 * {
